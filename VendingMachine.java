@@ -1,3 +1,3 @@
 public interface VendingMachine {
-    void issuingDrink ();
+    public void issuingDrink();
 }

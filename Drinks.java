@@ -8,4 +8,25 @@ public class Drinks {
         this.volume = volume;
         this.price = price;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Drinks{" +
+                "name='" + name + '\'' +
+                ", volume=" + volume +
+                ", price=" + price +
+                '}';
+    }
 }

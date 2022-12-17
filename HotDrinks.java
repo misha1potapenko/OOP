@@ -5,5 +5,20 @@ public  class HotDrinks extends Drinks{
         super(name, volume, price);
         this.temperature = temperature;
     }
+
+
+    @Override
+    public String toString() {
+        return "HotDrinks{" +
+                "temperature=" + temperature +
+                ", name='" + name + '\'' +
+                ", volume=" + volume +
+                ", price=" + price +
+                '}';
+    }
+
+    public int getTemperature() {
+        return temperature;
+    }
 }
 

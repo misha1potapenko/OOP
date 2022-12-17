@@ -8,9 +8,32 @@
         и позвольте покупателю купить товар.*/
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
+        List<HotDrinks> addHotDrinks = new ArrayList<>();
+        addHotDrinks.add(new HotDrinks("tea", 500, 50,95));
+        addHotDrinks.add(new HotDrinks("tea", 300, 50,95));
+        addHotDrinks.add(new HotDrinks("tea", 200, 50,95));
+        addHotDrinks.add(new HotDrinks("coffee", 200, 100,88));
+        addHotDrinks.add(new HotDrinks("coffee", 300, 150,89));
+        addHotDrinks.add(new HotDrinks("coffee", 500, 150,89));
+        List<HotDrinksVendingMachine> addVendingMachine = new ArrayList<>();
+        addVendingMachine.add(new HotDrinksVendingMachine(addHotDrinks));
+        HotDrinksVendingMachine showAll = new HotDrinksVendingMachine(addHotDrinks);
+        System.out.println("Весь список напитков ");
+        showAll.showDrink();
+        for (HotDrinksVendingMachine first: addVendingMachine
+             ) { first.getProduct();
+        }
+
+
+
+
+
+
     }
 }

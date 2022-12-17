@@ -10,10 +10,10 @@ public  class HotDrinks extends Drinks{
     @Override
     public String toString() {
         return "HotDrinks{" +
-                "temperature=" + temperature +
-                ", name='" + name + '\'' +
+                " name='" + name + '\'' +
                 ", volume=" + volume +
                 ", price=" + price +
+                ", temperature=" + temperature +
                 '}';
     }
 
